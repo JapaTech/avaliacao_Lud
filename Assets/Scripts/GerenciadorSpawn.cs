@@ -9,6 +9,8 @@ public class GerenciadorSpawn : MonoBehaviour
     //Até que número de vezes sérá executada
     [SerializeField] int _fibonacci_N = 6;
 
+    [SerializeField] float _intervaloEntreSpawn = 3;
+
     //Prefab na nave
     [SerializeField] NaveControlador nave;
 
@@ -31,7 +33,7 @@ public class GerenciadorSpawn : MonoBehaviour
     void Start()
     {
         //Chama o spawn de inimigos a cada 3 segundos
-        InvokeRepeating(nameof(ChamaSpawn), 2, 3);
+        InvokeRepeating(nameof(ChamaSpawn), 2, _intervaloEntreSpawn);
     }
 
     private void Update()

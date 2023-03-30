@@ -583,7 +583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3115e749ad0a49947b68bfafe4251dee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fibonacci_N: 300
+  _fibonacci_N: 6
+  _intervaloEntreSpawn: 3
   nave: {fileID: 900867894, guid: 361b3921b68c940c288f39dcbdafc5e5, type: 3}
 --- !u!1 &705507993
 GameObject:
